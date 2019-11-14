@@ -28,13 +28,13 @@ def contact(request):
         contact.save()
 
         # Send email
-        send_mail(
-            'Property Listing Inquiry', # subject
-            'There has been an inquiry for ' + listing + '. Sign into the admin panel for more info', # the body
-            'nimreine@gmail.com', # from address (set for the smpt)
-            [realtor_email, 'nimreine@gmail.com'], # array of email address you want this to get sent to
-            fail_silently=False
-        )
+#         send_mail(
+#             'Property Listing Inquiry', # subject
+#             'There has been an inquiry for ' + listing + '. Sign into the admin panel for more info', # the body
+#             'nimreine@gmail.com', # from address (set for the smpt)
+#             [realtor_email, 'nimreine@gmail.com'], # array of email address you want this to get sent to
+#             fail_silently=False
+#         )
 
         # def send_email(request):
         #     msg = EmailMessage('Request Callback', 'Here is the message.', to=[realtor_email, 'nimreine@gmail.com'])
